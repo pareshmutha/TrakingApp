@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="home()">
+        <ion-icon name="md-home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title align="center">{{ 'Video History' | translate }}</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="ios-log-out-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-row>
+    <ion-col col-6> 
+      <button ion-button block class="camera-button" [ngClass]="Camera1selected" (click)="camera1()">Camera 1</button>
+    </ion-col>
+
+    <ion-col col-6>
+      <button ion-button block class="camera-button" [ngClass]="Camera2selected" (click)="camera2()">Camera 2</button>
+    </ion-col>
+  </ion-row>
+  <ion-list class="video_list">
+    <span id="videoSpan">
+        <video width="320" height="240" id="videoTag">
+        </video>
+    </span>
+    <ion-item class="video_list_item" *ngFor="let video of cameraVideoList" (click)="playVideo(video.VideoUrl)">
+      <ion-icon name="md-play" class="videoitem"  item-start></ion-icon>
+        {{video.VideoName}}
+    </ion-item>
+  </ion-list>
+</ion-content>

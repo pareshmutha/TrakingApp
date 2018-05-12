@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title align="center">{{ 'Dash Board' | translate }}</ion-title>
+     <ion-buttons right>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="ios-log-out-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="homeContainer">
+  <div class="homebg"></div>
+  <div class="homeBtnContainer">
+    <button ion-button block *ngFor="let student of studentslist" (click)="routeToPage('HomeMenu',student.StudentID)">
+          <ion-icon name="ios-list-box"></ion-icon>
+          <span class="homeBtnTxt">{{ student.StudentName }}</span>
+      </button>
+      <!-- <button ion-item class="homeBtn" (click)="routeToPage('VideoHistory')" id="addNewJob">
+          <ion-icon name="ios-add-circle" class="homeBtnIcon"></ion-icon>
+          <div class="homeBtnTxt">{{ 'Video History' | translate }}</div>
+      </button>
+       -->
+      
+  </div>
+</ion-content>

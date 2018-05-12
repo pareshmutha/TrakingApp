@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="home()">
+        <ion-icon name="md-home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title align="center">{{ 'Choose Option' | translate }}</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="ios-log-out-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="homeContainer">
+  <div class="homebg"></div>
+  <div class="homeBtnContainer">
+    <button ion-item class="homeBtn" (click)="busLocation()">
+          <ion-icon name="md-bus" class="homeBtnIcon"></ion-icon>
+          <div class="homeBtnTxt">Bus Location</div>
+      </button>
+       <button ion-item class="homeBtn" (click)="currentLocation()">
+          <ion-icon name="md-navigate" class="homeBtnIcon"></ion-icon>
+          <div class="homeBtnTxt">Current Location</div>
+      </button>
+      <button ion-item class="homeBtn" (click)="videoHistory()">
+          <ion-icon name="md-videocam" class="homeBtnIcon"></ion-icon>
+          <div class="homeBtnTxt">Video History</div>
+      </button>
+  </div>
+</ion-content>

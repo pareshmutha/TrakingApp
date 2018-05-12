@@ -1,0 +1,46 @@
+
+
+
+<ion-content>
+  <form #f="ngForm">
+    <ion-list>
+      <div class="senalogo"></div>
+       <ion-item>
+        <ion-label><ion-icon name="md-person"></ion-icon></ion-label>
+        <ion-input placeholder="Parent Name"  ngModel type="text"  name="parentname"></ion-input>
+      </ion-item>
+      <ion-item class="">
+        <ion-label><ion-icon name="md-contact"></ion-icon></ion-label>
+        <ion-input placeholder="Username"  ngModel  type="text" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="md-lock"></ion-icon></ion-label>
+        <ion-input placeholder="Password"  ngModel type="password"  name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="md-lock"></ion-icon></ion-label>
+        <ion-input placeholder="Confirm Password"  ngModel type="password"   name="cpassword"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="md-mail"></ion-icon></ion-label>
+        <ion-input placeholder="Email Id"  ngModel type="text"  name="emailid"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="md-phone-portrait"></ion-icon></ion-label>
+        <ion-input placeholder="Mobile Number"  ngModel maxlength="10" type="text"  name="mobilenumber"></ion-input>
+      </ion-item>
+      
+
+      <div padding>
+        <button ion-button class="signupbtn" block (click) = signup(f)>{{ 'SIGNUP' | translate }}</button>
+        <button ion-button class="loginbtn" (click) = addchild() block>{{ 'ADD CHILD' | translate }}</button>
+        <div class="login" (click) = loginPage()>Login?</div>
+
+      </div>
+
+     
+      
+
+    </ion-list>
+  </form>
+</ion-content>

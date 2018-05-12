@@ -1,0 +1,47 @@
+
+
+
+<ion-content>
+  <form #f="ngForm">
+    <ion-list>
+      <div class="senalogo"></div>
+      <ion-item>
+        <ion-label><ion-icon name="ios-contact-outline"></ion-icon></ion-label>
+        <ion-input placeholder="User Name" ngModel type="text" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="md-contact"></ion-icon></ion-label>
+        <ion-input placeholder="Child Name" ngModel type="text" name="StudentName"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label>School Name</ion-label>
+      <ion-select ngModel name="SchoolName" #t (ionChange) = "getBus(t.value)">
+        <ion-option value="{{school}}" *ngFor="let school of schoolList">{{school}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Bus</ion-label>
+      <ion-select ngModel name="BusNo" #b (ionChange) = "getStops(b.value)">
+        <ion-option value="{{bus}}" *ngFor="let bus of busList">{{bus}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pickup Point</ion-label>
+      <ion-select ngModel name="BusLocation">
+        <ion-option value="{{busLocation}}" *ngFor="let busLocation of busLocations">{{busLocation}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+      
+
+      <div padding>
+        <button ion-button class="loginbtn" block (click) = newstudentregistration(f)>{{ 'ADD CHILD' | translate }}</button>
+        <div class="login" (click) = loginPage()>Login?</div>
+      </div>
+
+     
+      
+
+    </ion-list>
+  </form>
+</ion-content>

@@ -1,0 +1,51 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+		color:#fff;
+	}
+.toolbar-background-md{
+		background-color:rgb(158,0,41);
+		color:rgb(241,191,94);
+		
+}
+.content-md{
+		background-color:rgb(236,236,236) !important;
+}
+.toolbar-title-md{
+	color:#fff;
+}
+.button-md{
+	    height: 4.8rem;
+	    font-size: 1.8rem;
+}
+.alert-head{
+		padding:0 !important;
+		background-color: #0bd192;
+		color:#fff;
+}
+.alert-md .alert-head{
+	text-align:center;
+}
+.alert-title{
+	background-color:rgb(158,0,41);
+	color:rgb(241,191,94);
+}
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+	border-bottom-color: #9e0029;
+    -webkit-box-shadow: inset 0 -1px 0 0 #9e0029;
+    box-shadow: inset 0 -1px 0 0 #9e0029;
+}

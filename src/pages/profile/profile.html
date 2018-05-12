@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar hideBackButton>
+      <ion-buttons left>
+          <button class="headerButtons" (click)="home()">
+             <ion-icon name="ios-home-outline"></ion-icon>
+          </button>
+      </ion-buttons>
+    <ion-title  align="center">{{ 'Profile' | translate }}</ion-title>
+    <ion-buttons right>
+          <button class="headerButtons">
+             <ion-icon name="ios-cart-outline"></ion-icon>
+          </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="list card">
+        <ion-item class="profile-item">
+          <div class="profile-picture big-profile-picture"></div>
+          <h2 class="profile-name dark">Manoj D.</h2>
+        </ion-item>
+         <ion-list >
+            <ion-item-sliding>
+              <ion-item class="profileinputfields">
+               <ion-label stacked><ion-icon name="md-phone-portrait" style="margin-right: 2%"></ion-icon>Mobile Number</ion-label>
+               <ion-input type="text" value="9876543210" disabled></ion-input>
+              </ion-item>
+               <ion-item-options side="right">
+                  <button ion-button class="slideeditbtn">
+                    <ion-icon name="md-create"></ion-icon>
+                  </button>
+              </ion-item-options>
+          </ion-item-sliding>
+           <ion-item-sliding>
+              <ion-item class="profileinputfields">
+               <ion-label stacked><ion-icon name="md-home" style="margin-right: 2%"></ion-icon>Address</ion-label>
+               <ion-input type="text" value="A/24 Gokhale Nagar, Pune 411001" disabled></ion-input>
+              </ion-item>
+               <ion-item-options side="right">
+                  <button ion-button class="slideeditbtn">
+                    <ion-icon name="md-create"></ion-icon>
+                  </button>
+              </ion-item-options>
+          </ion-item-sliding>
+    </ion-list>
+    </div>
+   <div padding>
+        <button ion-button class="loginbtn" block>{{ 'Change Password' | translate }}</button>
+    </div>
+</ion-content>

@@ -1,0 +1,31 @@
+
+
+
+<ion-content>
+  <form #f="ngForm">
+    <ion-list>
+      <div class="senalogo"></div>
+      <ion-item class="logincontainer">
+        <ion-label><ion-icon name="md-contact"></ion-icon></ion-label>
+        <ion-input placeholder="Username" ngModel type="text" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><ion-icon name="md-lock"></ion-icon></ion-label>
+        <ion-input placeholder="Password" ngModel type="password"  name="password"></ion-input>
+      </ion-item>
+      <!-- <div class="forgotpass">Forgot Password?</div> -->
+      
+
+      <div padding>
+        <button ion-button class="loginbtn" block (click) = doLogin(f)>{{ 'LOGIN_BUTTON' | translate }}</button>
+        <button ion-button class="loginbtn" block (click)="signup()">{{ 'SIGNUP' | translate }}</button>
+
+      </div>
+
+     
+      
+
+    </ion-list>
+  </form>
+</ion-content>

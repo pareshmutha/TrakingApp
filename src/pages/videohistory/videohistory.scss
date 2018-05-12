@@ -1,0 +1,86 @@
+page-videohistory {
+	video{
+		width: 100%;
+	}
+	.logincontainer{
+		margin-top:10px;
+		padding:15px;
+	}
+	.toolbar-title-md{
+		color:#fff;
+	}
+	.listicon{
+		padding-right:5px;
+		color:#333;
+	}
+	.serviceheader{
+		background-color: rgb(224,255,231);
+		color:#505050;
+	}
+	.servicename{
+		width: 80%;
+    	display: inline-block;
+		color:#505050;
+    	
+	}
+	.camera-button{
+		background-color:rgb(239,235,234);
+		color:#000;
+		border:1px solid rgb(102,102,102);
+	}
+	.camera-button.selected{
+		background-color:rgb(102,102,102);
+		color:#fff;
+		border:1px solid rgb(102,102,102);
+	}
+	.video_list_item{
+		background-color:rgb(236,236,236);
+		border-bottom: 1px solid rgb(102,102,102); 
+	}
+	.statusicons{
+		float:right;
+	}
+	.statusicon{
+		text-align:center;
+	}
+	.statusicon .icon{
+		font-size: 22px;
+		vertical-align: sub;
+		padding-right: 5px;
+
+	}
+	.completed{
+		color:green;
+	}
+	.pending{
+		color:rgb(207,28,28);
+	}
+	.headerButtons{
+		    background: transparent;
+		    font-size: 18px;
+		    color: #fff;
+	}
+	.headerButtons .icon{
+		    font-weight: bold;
+	}
+	.slideeditbtn{
+		background-color:rgb(8,200,171);
+		color:#fff;
+	}
+	.slideeditbtn .icon{
+		font-size:25px;
+	}
+	.disbaledbtn{
+		background-color:rgb(188,193,188);
+		color:rgb(240,241,241);
+    	box-shadow: none;
+	}
+	.disbaled{
+		color:rgb(240,241,241);
+	}
+	.video_list{
+	}
+	.addservicesbtn{
+		background-color: #0bd192;
+	}
+}

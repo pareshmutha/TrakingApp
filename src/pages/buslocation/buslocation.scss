@@ -1,0 +1,66 @@
+page-buslocation {
+	 .scroll {
+        height: 100%
+      }
+ 
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+	.homeContainer{
+		position: absolute;
+	    height: 100%;
+	    width:100%;
+		background-color:rgb(236,236,236);
+
+	}
+	.homebg{
+		position: absolute;
+	    background: url('../assets/img/homebg.png') no-repeat transparent;
+	    background-size: cover;
+	    height: 35%;
+	    width:100%;
+	    background-repeat: repeat-x;
+	    animation: animatedBackground 40s linear infinite;
+	}
+	.homeBtnContainer{
+		position: absolute;
+	    height: 65%;
+	    width:100%;
+	    top:18%;
+	    left:25%;
+	}
+	.homeBtn{
+		text-align: center;
+	    width: 49%;
+    	height: 22%;
+	    border-radius: 5px;
+	    color:#333;
+	    margin-top: 10%;
+    	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	    &.activated {
+	      background-color: #0bd192;
+	      color:#fff;
+	    }
+	}
+	.homeBtnTxt{
+		margin-top:7%;
+	}
+	.homeRightBtn{
+		float:right;
+		margin-right:5%;
+	}
+	.homeLeftBtn{
+		margin-left:5%;
+	}
+	.item-md.item-block .item-inner{
+		border:none;
+	}
+	.homeBtnIcon{
+		color:rgb(241,191,94);
+		font-size: 23px;
+	}
+	.label-md{
+		margin:0;
+	}
+}
